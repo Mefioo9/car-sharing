@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1088px;
+}
+
+.btn {
+  background: #FF0000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #FF00004D;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal bold 16px/22px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  padding: 10px 30px;
+}
+
+.btn-big {
+  padding: 22px 55px;
+}
+
+.btn-inverted {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: none;
+  color: #FF0000;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.page-header {
+  text-transform: uppercase;
+  background: #00000066 0% 0% no-repeat padding-box;
+  /* border: 2px solid #FFFFFF33; */
+  height: 88px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.page-header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-header .page-logo{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.page-header .page-logo span.accent {
+  color: red;
+}
+
+.page-nav-list {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.page-nav-list a {
+  padding: 33px 40px;
+}
+
+.page-nav-list a:hover {
+  background: #FFFFFF33 0% 0% no-repeat padding-box;
+}
+
+.banner {
+  height: calc(100vh - 28px);
+  background-image: url(../images/Image.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.banner .dark-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.banner-text {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 40px 0 54px 0;
+}
+
+.banner-buttons {
+  display: flex;
+}
+
+.banner-buttons .btn:first-child {
+  margin-right: 25px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/Icon Arrow Down.svg");
+  bottom: 0;
+  left: calc(50% - 28px);
+}
